@@ -1,0 +1,29 @@
+python "train.py" \
+    -project orco_vit \
+    -dataset cifar100 \
+    -model vit_base_patch16_224_dino \
+    -save_path_prefix all_train_aug \
+    -gpu 0 \
+    -pretrain_epochs 20 \
+    -batch_size_pretrain 128 \
+    -pretrain_lr 0.1 \
+    -pretrain_schedule Cosine \
+    -alpha 0.1 \
+    -epochs_base 10 \
+    -lr_base 0.1 \
+    -batch_size_base 128 \
+    -batch_size_supcon_base 128 \
+    -base_aug \
+    -base_num_aug 1 \
+    -max_delta_base 0.1 \
+    -epochs_joint 100 \
+    -batch_size_replay 128 \
+    -lr_new 0.1 \
+    -joint_schedule Cosine \
+    -inc_aug \
+    -inc_num_aug 1 \
+    -max_delta_inc 0.1 \
+    -decay 0.0 \
+    -decay_new 0.0 \
+    -perturb_epsilon_base 9e-05 \
+    -perturb_epsilon_inc 9e-05 
