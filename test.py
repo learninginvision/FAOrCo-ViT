@@ -10,7 +10,7 @@ def get_command_line_parser():
     parser.add_argument('-project', type=str, default="orco")
     parser.add_argument('-dataset', type=str, default='mini_imagenet',
                         choices=['mini_imagenet', 'cub200', 'cifar100'])
-    parser.add_argument('-dataroot', type=str, default="/home/lilipan/gsk/datasets")
+    parser.add_argument('-dataroot', type=str, default="../datasets")
     parser.add_argument('-save_path_prefix', "-prefix", type=str, default="")
 
     parser.add_argument('-gpu', default='0')
