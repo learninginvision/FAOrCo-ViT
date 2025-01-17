@@ -78,17 +78,7 @@ The result will be saved in the the directory where your model is saved.
 *Results compared with prior work.*
 </div>
 
-<div align="center">
-<img align="middle" width="500" src="figures/result_1.png">
 
-*Results on Multi-model datasets.*
-</div>
-
-<div align="center">
-<img align="middle" width="500" src="figures/result_2.png">
-
-*Results of decision stability evaluation on three datasets.*
-</div>
 
 ## 📜 Acknowledgments
 
